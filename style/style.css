@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* -------------ESTILOS GENERALES----------- */
+
+/* ......HEADER..... */
+
+/* Barra adicional superior */
+.adicional {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px;
+}
+
+/* Header general */
+#header {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.932);
+    height: 90px;
+    align-items: center; /* coloca a los elem. en el eje central horizontal */
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+/* Logo */
+#header .header__logo{
+   margin-left: 50px;
+   margin-right: 25px;
+}
+#header .header__logo img {
+    height: 70px;
+}
+
+/* Barra Navegacion */
+#header .header__menu {
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#header .header__menu .inicio{
+    border-bottom: solid 1px #818181;
+}
+
+#header .header__menu ul li {
+    display: inline-block; /* los coloca uno al lado del otro */
+   position: relative; /* para que funcione menu desplegable */
+    padding: 10px;
+}
+#header .header__menu ul li a{
+    color: black;
+    text-decoration: none; /* saca subrayado */
+}
+#header .header__menu ul li a:hover{
+    color: rgb(250, 127, 118);
+}
+
+/* menu desplegable */
+#header .header__menu ul ul{
+    position: absolute;
+    display: none; /* los oculta */
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    width: 200px;
+    z-index: 100;
+}
+#header .header__menu ul ul li{
+    display: block;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+#header .header__menu ul li:hover ul {
+    display: block;
+}
+
+ /* ......FOOTER..... */
+
+ #footer{
+    padding-top: 40px;
+    background-color: rgb(236, 178, 130);
+}
+
+.redes-sociales{
+   text-align: center;
+}
+
+.redes-sociales-iconos div{
+    display: inline-block;
+    margin: 1px 10px;
+}
+
+.redes-sociales img{
+    height: 30px;
+}
+
+#footer .enlaces{
+    margin-top: 50px;
+}
+
+#footer .enlaces a{
+    text-decoration: none;
+    color: #333;
+    margin:10px;
+}
+
+#footer .copy{
+    text-align: center;
+    margin-top: 50px;
+    background-color: brown;
+}
+
+
+/* ------------------PAGINA INICIO---------------------- */
+
+/* MAIN */
+
+#fondoImagen{
+    /* width: 100%; */
+    height: 400px;
+    background-image: url(../);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-style: oblique;
+}
+
+#fondoImagen .fondoImagen__fondoTransparente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 100%;
+    height: 100%;
+}
+
+#fondoImagen .frase{
+    display: block;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin: 30px;
+    
+}
+
+#fondoImagen .slogan{
+    font-size: 20px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+/* .....SECTION INFORMACION..... */
+
+#banner {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#banner .banner__info{
+    display: flex;
+    align-items: center;
+}
+
+#banner .banner__info img{
+    height: 40px;
+    margin-right: 15px;
+}
+#banner h6 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 2px;
+}
+#banner p{
+    color: rgb(71, 71, 71);
+    font-size: 14px;
+}
+
+
+/* .....SECTION PRODUCTOS..... */
+
+#productos{
+    /* background-color: rgb(233, 169, 140); */
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#productos h2{
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    border-bottom: solid 1px black;
+}
+#productos h2 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#productos .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(2,300px);
+    gap: 20px;
+    justify-content: center;
+}
+.grid__item--combo:nth-child(7){
+    grid-column: 3/5;
+}
+.grid-item a:hover{
+    color: white;
+    font-size: 20px;
+}
+.grid__item--collar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                  url('../img/collares.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid__item--correa{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                  url('../img/correas.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid__item--pretal{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/combos.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid__item--cinturon{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/cintos.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid__item--placa{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/placas.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid__item--taza{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/tazas.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid__item--combo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/combosss.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* ------------------PAGINA INFO---------------------- */
+
+/* .....TALLES..... */
+.talles__grid{
+    display: grid;
+    grid-template-columns: 200px 400px 200px 400px;
+    grid-template-rows: 50px 100px 100px 100px 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+#collapseOne{
+    background-image: url(../img/tazas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#collapseTwo{
+    background-image: url(../img/tazas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ------------------PAGINA PRODUCTOS---------------------- */
+
+
+/* ------------------PAGINA PASEO---------------------- */
+
+ /* playlist */
+
+ .musica__texto{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+
+ .musica__texto p{
+    padding-top: 10px;
+ }
+
+ #musica div{
+    display: inline;
+ }
+
+/* ------------------PAGINA CONTACTO---------------------- */
