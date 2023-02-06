@@ -18,18 +18,18 @@
     padding: 8px;
 }
 
-/* Header general */
+/* Header general 
 #header {
     display: flex;
     background-color: rgba(255, 255, 255, 0.932);
     height: 90px;
-    align-items: center; /* coloca a los elem. en el eje central horizontal */
+    align-items: center;  coloca a los elem. en el eje central horizontal 
     position: sticky;
     top: 0px;
     z-index: 1000;
 }
 
-/* Logo */
+ Logo 
 #header .header__logo{
    margin-left: 50px;
    margin-right: 25px;
@@ -38,7 +38,7 @@
     height: 70px;
 }
 
-/* Barra Navegacion */
+ Barra Navegacion 
 #header .header__menu {
     margin-left: 35px;
     margin-right: 35px;
@@ -51,22 +51,22 @@
 }
 
 #header .header__menu ul li {
-    display: inline-block; /* los coloca uno al lado del otro */
-   position: relative; /* para que funcione menu desplegable */
+    display: inline-block;  los coloca uno al lado del otro 
+   position: relative;  para que funcione menu desplegable 
     padding: 10px;
 }
 #header .header__menu ul li a{
     color: black;
-    text-decoration: none; /* saca subrayado */
+    text-decoration: none;  saca subrayado 
 }
 #header .header__menu ul li a:hover{
     color: rgb(250, 127, 118);
 }
 
-/* menu desplegable */
+ menu desplegable
 #header .header__menu ul ul{
     position: absolute;
-    display: none; /* los oculta */
+    display: none; los oculta 
     background-color: rgb(255, 255, 255);
     border: solid 1px black;
     width: 200px;
@@ -79,7 +79,7 @@
 }
 #header .header__menu ul li:hover ul {
     display: block;
-}
+} */
 
  /* ......FOOTER..... */
 
@@ -289,18 +289,9 @@
 /* ------------------PAGINA INFO---------------------- */
 
 /* .....TALLES..... */
-.talles__grid{
-    display: grid;
-    grid-template-columns: 200px 400px 200px 400px;
-    grid-template-rows: 50px 100px 100px 100px 100px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 15px;
-}
 
 #collapseOne{
-    background-image: url(../img/tazas.jpg);
+    background-image: url(../img/collares.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -311,7 +302,12 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
+#collapseThree{
+    background-image: url(../img/WhatsApp\ Image\ 2023-01-30\ at\ 21.35.48.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 /* ------------------PAGINA PRODUCTOS---------------------- */
 
